@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina tragaperras</title>
+    <!-- estilos -->
+    <link rel="stylesheet" href="estilos/styles.css">
+    <!-- error 404 favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <div class="marco">
+            <div class="botonesSuperiores">
+                <button id="anadirMoneda" onclick="anadirMoneda()">Añadir Monedas</button>
+                <button id="iniciarJuego" onclick="iniciarJuego()">iniciarJuego</button>
+                <button class="reinciar" onclick="reinciarPartida()">Reiniciar</button>
+            </div>
+            
+            <h1 class="acumulado">Monedas disponibles: <span class="monedas">0</span></h1>
+    
+            <div class="imagenes">
+                <img id="imgUno" src="./img/aguacate.png" alt="">
+                <img id="imgDos" src="./img/aguacate.png" alt="">
+                <img id="imgTres" src="./img/aguacate.png" alt="">
+            </div>
+    
+            <h1 class="resultado">Tira para conocer tu suerte!</h1>
+            <button id="jugada" onclick="jugada()">Tirar</button>
+            
+            <div class="historial">
+                <h1 class="historialJugadas">Historial de jugadas</h1>
+                <div class="entrada">
+                    <ol class="listaBase" type="1">
+                    </ol>
+                </div>
+            </div>
+            <button class="salir"onclick="alertaPuntos()">Salir</button>
+        </div>
+        
+    </div>
+    
+    <script src="javascript/app.js"></script>
+</body>
+</html>

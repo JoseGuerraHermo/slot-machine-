@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../fotos/fondo.jpg");
+}
+h1{
+    margin-left: 0.5em;
+}
+.acumulado, .resultado, .historialJugadas{
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+}
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.marco{
+
+    height: 85vh;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+}
+
+.imagenes{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+}
+img{
+   
+    flex-direction: column;
+    height: 8em;
+    align-content: center;
+    margin: 0 1em;
+}
+
+button{
+    text-decoration: none;
+    color: white;
+    background-color: #16bf0d;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+}
+#anadirMoneda, #iniciarJuego, .reinciar, .salir{
+    padding: 0.8em;
+    width: 33.5%;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+#anadirMoneda{
+    border-radius:30px 0 0 30px;
+    border-right: 0px;
+}
+.reinciar{
+    border-radius: 0 30px 30px 0;
+    border-left: 0px;
+}
+.botonesSuperiores{
+    width:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#jugada{
+    position: relative;
+    width:100%;
+    height: 4em;
+    border-radius: 30px;
+    
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.salir{
+    position: absolute;
+    height: 4em;
+    width:100%;
+    border-radius: 30px;
+    bottom: 0px;
+}
+button:active {
+    transform: translateY(4px);
+}
+.off{
+    background-color: #658a63;
+}
+.listaBase{
+    align-items: center;
+    margin-left: 0.2em;
+    height: 10em;
+    font-size: 1.1em;
+    overflow-y:auto;
+}
+li:nth-child(even){
+    background-color: #a3cca1;;
+}
+.liResultado, .liBonus, .liMonedas{
+    font-weight: bold;
+}
+li{
+    padding: 0.3em;
+}
